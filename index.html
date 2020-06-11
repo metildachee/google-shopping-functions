@@ -3,22 +3,21 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <input class="starter" id="input" placeholder="input"/>
-    <h2>output:</h2>
-    <p class="starter" id="output"></p>
-    <script>
-      document.querySelector('#input').addEventListener('change', function(event){
-        var currentInput = event.target.value;
-        var result = inputHappened(currentInput);
-        display( result );
-      });
+    <div id="row1">
+      <h1>Google Shopping ~</h1>
+      <p>You can do the following: </br> 1. The number of product items
+      </br>2. The country of each item. </br> 3. Total price of all inventory.
+      </br> 4. Search for one of the things above.
+      </br> 5. Enter min,max.</p>
+      <input class="starter" id="input" placeholder="input"/>
+      <button id="submit">Buy</button>
+    </div>
+    <div id="row2">
+      <h2>output:</h2>
+      <p class="starter" id="output"></p>
+    </div>
 
-      var display = function( data ){
-        var output = document.querySelector('#output');
-        output.innerText = data;
-      }
-    </script>
-    <script src="products.js"></script>
     <script src="script.js"></script>
+    <script src="products.js"></script>
   </body>
 </html>
